@@ -165,6 +165,31 @@ def list_videos():
     else:
         return jsonify({'error': 'No videos available'}), 404
 
+@app.route('/getviolation/<filename>', methods=['GET'])
+def send_violations(filename):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    
+    # Запрос данных о нарушениях для данного файла
+    cursor.execute("SELECT violations FROM videos WHERE filename=?", (filename,))
+    result = cursor.fetchone()
+    conn.close()
+    
+    if result:
+        # Извлечение данных о нарушениях из результата запроса
+        violations = json.loads(result[0])
+        vest_violations = violations.get('vest', [])
+        ducking_violations = violations.get('ducking', [])
+
+        response_data = {
+            'vest': vest_violations,
+            'ducking': ducking_violations
+        }
+        return jsonify(response_data)
+    else:
+        return jsonify({'error': 'No violations data found for this file'}), 404
+
+
 @app.route('/getvideo/<filename>', methods=['GET'])
 def send_video(filename):
     # Проверяем, существует ли файл
