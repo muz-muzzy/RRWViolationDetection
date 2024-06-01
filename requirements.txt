@@ -17,6 +17,7 @@ ament-uncrustify==0.12.10
 ament-xmllint==0.12.10
 angles==1.15.0
 astunparse==1.6.3
+beautifulsoup4==4.12.3
 blinker==1.8.2
 builtin-interfaces==1.2.1
 certifi==2024.2.2
@@ -45,6 +46,7 @@ flatbuffers==24.3.25
 fonttools==4.53.0
 fsspec==2024.5.0
 gast==0.5.4
+gdown==5.2.0
 geometry-msgs==4.2.3
 google-pasta==0.2.0
 grpcio==1.64.0
@@ -109,6 +111,7 @@ psutil==5.9.8
 py-cpuinfo==9.0.0
 Pygments==2.18.0
 pyparsing==3.1.2
+PySocks==1.7.1
 python-dateutil==2.9.0.post0
 python-qt-binding==1.1.2
 pytz==2024.1
@@ -181,6 +184,7 @@ sensor-msgs==4.2.3
 sensor-msgs-py==4.2.3
 shape-msgs==4.2.3
 six==1.16.0
+soupsieve==2.5
 sros2==0.10.4
 statistics-msgs==1.2.1
 std-msgs==4.2.3
