@@ -33,8 +33,6 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
 app.config['TRANS_FOLDER'] = TRANS_FOLDER
 
-import sqlite3
-
 DATABASE = 'video_analysis.db'
 
 def create_database_and_tables():
