@@ -65,7 +65,7 @@ export default {
     },
     async fetchVideoUrls() {
       try {
-        const response = await axios.get('http://192.168.110.63:3000/getvideos', { responseType: 'json' });
+        const response = await axios.get('http://127.0.0.1:3000/getvideos', { responseType: 'json' });
         this.videoUrls = response.data.files;
         console.log(this.videoUrls);
       } catch (error) {
@@ -74,11 +74,11 @@ export default {
     },
     async fetchVideo(name) {
       try {
-        const videoResponse = await axios.get(`http://192.168.110.63:3000/getvideo/${name}`, { responseType: 'blob' });
+        const videoResponse = await axios.get(`http://127.0.0.1:3000/getvideo/${name}`, { responseType: 'blob' });
         const videoBlob = new Blob([videoResponse.data], { type: 'video/mp4' });
         this.videoSrc = URL.createObjectURL(videoBlob);
 
-        const violationResponse = await axios.get(`http://192.168.110.63:3000/getviolation/${name}`);
+        const violationResponse = await axios.get(`http://127.0.0.1:3000/getviolation/${name}`);
         const violationData = violationResponse.data;
 
         this.ducking = violationData.ducking;
