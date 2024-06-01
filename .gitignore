@@ -161,10 +161,10 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-/upload
-/trans
-/outputs
-/models/DuckingModel/weights/model.h5
+/backend/upload
+/backend/trans
+/backend/outputs
+/backend/models/DuckingModel/weights/model.h5
 
 *.jpg
 *.db
