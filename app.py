@@ -11,6 +11,17 @@ import json
 
 UPLOAD_FOLDER = './upload'
 OUTPUT_FOLDER = './outputs'
+TRANS_FOLDER = './trans'
+
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
+
+if not os.path.exists(OUTPUT_FOLDER):
+    os.makedirs(OUTPUT_FOLDER)
+
+if not os.path.exists(TRANS_FOLDER):
+    os.makedirs(TRANS_FOLDER)
+
 ALLOWED_EXTENSIONS = {'mp4', 'png'}
 app = Flask(__name__)
 CORS(app=app)
@@ -20,6 +31,7 @@ ducking_model = DuckingModel("./models/DuckingModel/weights/model.h5")
     
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
+app.config['TRANS_FOLDER'] = TRANS_FOLDER
 
 import sqlite3
 
