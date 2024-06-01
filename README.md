@@ -48,7 +48,7 @@ python -m venv venv
 ```
 4. Вход в виртуальное окружение:
 ```bash
-.\venv\Scripts\activate.bat
+.\venv\Scripts\activate
 ```
 5. Установка зависимостей:
 ```bash
