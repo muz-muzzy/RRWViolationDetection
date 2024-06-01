@@ -166,5 +166,8 @@ cython_debug/
 /backend/outputs
 /backend/models/DuckingModel/weights/model.h5
 
+/frontend/node_modules
+
+
 *.jpg
 *.db
