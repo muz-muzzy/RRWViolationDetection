@@ -58,8 +58,8 @@ class Jacket_detection():
         
         jacket_centres = self.find_centers(jacket_boxes)
 
-        people_results[0].save(filename='people.jpg')
-        jacket_results[0].save(filename='jacket.jpg')
+        #people_results[0].save(filename='people.jpg')
+        #jacket_results[0].save(filename='jacket.jpg')
         #print(people_boxes)
         #print(jacket_boxes)
         violation = False
