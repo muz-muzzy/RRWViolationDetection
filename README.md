@@ -10,7 +10,7 @@ git clone https://github.com/muz-muzzy/RRWViolationDetection.git
 ```
 2. Переход в каталог проекта:
 ```bash
-cd RRWViolationDetection
+cd RRWViolationDetection/backend
 ```
 3.  Создание виртуального окружения:
 ```bash
@@ -40,7 +40,7 @@ git clone https://github.com/muz-muzzy/RRWViolationDetection.git
 ```
 2. Переход в каталог проекта:
 ```bash
-cd RRWViolationDetection
+cd RRWViolationDetection/backend
 ```
 3.  Создание виртуального окружения:
 ```bash
