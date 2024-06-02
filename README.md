@@ -10,7 +10,7 @@
 ## Установка
 1. Переход в директорию
 ```bash
-cd frontend
+cd RRWViolationDetection/frontend
 ```
 2. Установка зависимостей
 ```bash
